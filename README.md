@@ -35,6 +35,16 @@ A powerful and user-friendly V2Ray client for Android, built with Flutter. This 
 - **State Persistence**: Connection state preserved across app restarts
 - **Manual Configuration**: Support for manual server configuration input
 
+## 📸 Screenshots
+
+<div align="center">
+  <img src="screenshots/photo_1_2025-07-27_13-31-33.jpg" width="200" alt="V2Ray">
+  <img src="screenshots/photo_2_2025-07-27_13-31-33.jpg" width="200" alt="V2Ray">
+  <img src="screenshots/photo_3_2025-07-27_13-31-33.jpg" width="200" alt="V2Ray">
+  <img src="screenshots/photo_4_2025-07-27_13-31-33.jpg" width="200" alt="V2Ray">
+  <img src="screenshots/photo_5_2025-07-27_13-31-33.jpg" width="200" alt="V2Ray">
+</div>
+
 ## 📥 Installation
 
 ### Download
@@ -113,7 +123,7 @@ lib/
 
 ### Get Help
 - 📱 **Telegram Channel**: [IRDevs Channel](https://t.me/irdevs_dns)
-- 🆓 **Free Servers**: [Get Free Servers](https://t.me/tg_stars_free_servers)
+- 🆓 **Free Servers**: [Get Free Servers](https://irdevs.sbs)
 - 🐛 **Bug Reports**: Create an issue in this repository
 - 💡 **Feature Requests**: Submit enhancement requests
 

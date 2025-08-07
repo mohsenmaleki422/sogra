@@ -1,0 +1,31 @@
+workflows:
+  ios-workflow:
+    name: iOS Build
+    environment:
+      vars:
+        FLUTTER_VERSION: "3.19.5"
+    scripts:
+      - name: Install Flutter
+        script: |
+          cd $FCI_BUILD_DIR
+          git clone https://github.com/flutter/flutter.git -b stable
+          export PATH="$PATH:$FCI_BUILD_DIR/flutter/bin"
+          flutter doctor
+      - name: Get Flutter dependencies
+        script: |
+          cd $FCI_BUILD_DIR
+          export PATH="$PATH:$FCI_BUILD_DIR/flutter/bin"
+          flutter packages get
+      - name: Build iOS
+        script: |
+          cd $FCI_BUILD_DIR
+          export PATH="$PATH:$FCI_BUILD_DIR/flutter/bin"
+          flutter build ios --release --no-codesign
+      - name: Create IPA
+        script: |
+          cd $FCI_BUILD_DIR
+          mkdir -p Payload
+          cp -R build/ios/iphoneos/Runner.app Payload/
+          zip -r lak.ipa Payload
+    artifacts:
+      - lak.ipa

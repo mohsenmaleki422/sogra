@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
             elevation: 2,
           ),
-          cardTheme: CardTheme(
+          cardTheme: CardThemeData(  // اصلاح این بخش
             elevation: 2,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
